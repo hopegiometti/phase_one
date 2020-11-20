@@ -1,5 +1,7 @@
 class CitiesController < ApplicationController
-    
+    # include HTTParty
+    require 'httparty'
+
     def index
         @cities = City.all
         render json: @cities
@@ -17,8 +19,8 @@ class CitiesController < ApplicationController
     end
 
     def show
-        @city = City.find(params[:name])
-        response = HTTParty.get("https://developers.zomato.com/api/v2.1/cities?q=#{@city}&count=1")
+        # @city = City.find(params[:name])
+        response = HTTParty.get("https://developers.zomato.com/api/v2.1/cities?q=#denver&count=1")
         render json: response.body
     end
 
