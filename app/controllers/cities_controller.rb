@@ -16,9 +16,9 @@ class CitiesController < ApplicationController
         render json: { status: 'SUCCESS', message: 'deleted the city', data: @city }
     end
 
-    def search
-        @@city = City.find(params[:name])
-        response = HTTParty.get("https://developers.zomato.com/api/v2.1/cities?q=#{@@city}&count=1")
+    def show
+        @city = City.find(params[:name])
+        response = HTTParty.get("https://developers.zomato.com/api/v2.1/cities?q=#{@city}&count=1")
         render json: response.body
     end
 
