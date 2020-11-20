@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  country_id: 1
+  country_name: MyString
+  country_flag_url: MyString
+  should_experiment: 1
+  has_go_out_tab: 1
+  discovery_enabled: 1
+  has_new_ad_format: 1
+  is_state: 1
+  state_id: 1
+  state_name: MyString
+  state_code: MyString
+
+two:
+  id: 1
+  name: MyString
+  country_id: 1
+  country_name: MyString
+  country_flag_url: MyString
+  should_experiment: 1
+  has_go_out_tab: 1
+  discovery_enabled: 1
+  has_new_ad_format: 1
+  is_state: 1
+  state_id: 1
+  state_name: MyString
+  state_code: MyString
